@@ -14,9 +14,11 @@ function eventListeners() {
      }
 
      // buscador
-     inputBuscador.addEventListener('input', buscarContactos);
+     if(inputBuscador){
+          inputBuscador.addEventListener('input', buscarContactos);
+          numeroContactos();
+     }
      
-     numeroContactos();
 }
 
 function leerFormulario(e) {
